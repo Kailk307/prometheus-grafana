@@ -20,10 +20,10 @@ jobs:
 
       # Bước 2: Kiểm tra xem Docker và Docker Compose có sẵn trên máy ảo không
       - name: Verify Docker Compose Installation
-        run: docker-compose --version
+        run: docker compose --version
 
       # Bước 3: Lệnh CHỐT HẠ - Kiểm tra cú pháp file docker-compose.yml
       # Tham số --quiet giúp lệnh chỉ báo lỗi nếu có, không in ra cả file cấu hình dài dòng
       - name: Run Docker Compose Syntax Check
         run: |
-          docker-compose config --quiet
+          docker compose config --quiet
