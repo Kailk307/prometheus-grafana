@@ -1,0 +1,4 @@
+# Bỏ qua dữ liệu sinh ra của Prometheus và Grafana
+data/
+*.log
+.env
